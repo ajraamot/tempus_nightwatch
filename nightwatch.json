@@ -14,7 +14,7 @@
     "cli_args" : {
       "webdriver.chrome.driver" : "bin/chromedriver",
       "webdriver.firefox.driver": "",
-      "webdriver.gecko.driver" : ""
+      "webdriver.gecko.driver" : "node_modules/geckodriver"
     }
   },
 
@@ -29,21 +29,20 @@
         "path" : ""
       },
       "desiredCapabilities": {
-        "_do_this_later_browserName": "firefox",
         "browserName": "chrome",
         "marionette": true
+      }
+    },
+
+    "firefox" : {
+      "desiredCapabilities": {
+        "browserName": "firefox"
       }
     },
 
     "chrome" : {
       "desiredCapabilities": {
         "browserName": "chrome"
-      }
-    },
-
-    "edge" : {
-      "desiredCapabilities": {
-        "browserName": "MicrosoftEdge"
       }
     }
   }
